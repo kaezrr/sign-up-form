@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Sign-up Form</title>
 </head>
 <body>
-    
+    <div class="logo-container">
+        <div class="logo">
+            <img src="images/odin-lined.png" alt="Odin Logo">
+            <p>Odin</p>
+        </div>
+        <footer>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a>
+             on <a href="https://unsplash.com/">Unsplash</a>
+        </footer>
+    </div>
+    <div class="main">
+        <div class="start">
+        <p>This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+            Sign up <em>now</em> to get started.
+        </p>
+        <p>
+            You <em>know</em> you want to.
+        </p>
+        </div>
+        <form action="https://sign-up.com/action" method="post">
+            <div class="form-body">
+                <p>Let's do this!</p>
+                <fieldset>
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" name="first-name" id="first-name">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" name="last-name" id="last-name">
+                </fieldset>
+                <fieldset>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email">
+                    <label for="phone">PHONE</label>
+                    <input type="tel" name="phone" id="phone">
+                </fieldset>
+                <fieldset>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password">
+                    <label for="repeat">REPEAT PASSWORD</label>
+                    <input type="password" name="repeat" id="repeat">
+                </fieldset>
+            </div>
+            <div class="form-footer">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="http://sign-up.com/login">Log in</a></p>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

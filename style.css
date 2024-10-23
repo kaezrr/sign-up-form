@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "norse";
+    src: url("font/Norse-Bold.otf");
+}
+
+a {
+    color: white;
+}
+
+body {
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    background-color: gainsboro;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 30px;
+}
+
+div.logo-container {
+    box-sizing: border-box;
+    min-width: 40vw;
+    background-image: url("images/leaves.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 10px 0px;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.logo-container footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+.logo img {
+    width: 75px;
+    height: auto;
+}
+
+.logo p {
+    padding: 0px;
+    margin: 0px;
+    font-family: "norse";
+    font-size: 75px;
+}
+
+.start {
+    font-size: 24px;
+}
+
+div.logo {
+    padding: 10px 0px;
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
