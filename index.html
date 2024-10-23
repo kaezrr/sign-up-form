@@ -30,22 +30,35 @@
             <div class="form-body">
                 <p>Let's do this!</p>
                 <fieldset>
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="first-name" id="first-name">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" name="last-name" id="last-name">
+                    <div class="input-container">
+                        <label for="first-name">FIRST NAME *</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="last-name">LAST NAME *</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
                 </fieldset>
                 <fieldset>
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                    <label for="phone">PHONE</label>
-                    <input type="tel" name="phone" id="phone">
+                    <div class="input-container">
+                        <label for="email">EMAIL *</label>
+                        <input type="email" name="email" id="email" placeholder="abc@xyz.com" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="phone">PHONE</label>
+                        <input type="tel" name="phone" id="phone" placeholder="+91XXXXXXXXXX" pattern="\+[0-9]{12}">
+                    </div>
                 </fieldset>
                 <fieldset>
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
-                    <label for="repeat">REPEAT PASSWORD</label>
-                    <input type="password" name="repeat" id="repeat">
+                    <div class="input-container">
+                        <label for="password">PASSWORD *</label>
+                        <input type="password" name="password" id="password" required>
+                        <p>* Passwords do not match</p>
+                    </div>
+                    <div class="input-container">
+                        <label for="repeat">CONFIRM PASSWORD *</label>
+                        <input type="password" name="repeat" id="repeat" required>
+                    </div>
                 </fieldset>
             </div>
             <div class="form-footer">

@@ -5,8 +5,27 @@
     src: url("font/Norse-Bold.otf");
 }
 
+:root {
+    --button-col: #596D48;
+}
+
 a {
     color: white;
+}
+
+.form-footer a {
+    color: var(--button-col);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.form-footer button {
+    background-color: var(--button-col);
+    font-size: 14px;
+    padding: 10px 35px;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
 }
 
 body {
@@ -17,12 +36,79 @@ body {
     background-color: gainsboro;
 }
 
+.form-body {
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 5px;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+input {
+    min-width: 15vw;
+    min-height: 20px;
+    border: solid rgba(0, 0, 0, 0.2) 1px;
+    border-radius: 3px;
+}
+
+label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 70);
+}
+
+input:focus {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 5px;
+    border-color: blue;
+}
+
+input:invalid:required:not(:placeholder-shown):not(:focus) {
+    border-color: red;
+}
+
+#password + p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 10px;
+    color: red;
+}
+
 .main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+}
+
+.form-body > p {
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 40px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: start;
-    margin: 30px;
+}
+
+fieldset {
+    border: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10vw;
 }
 
 div.logo-container {
@@ -58,7 +144,9 @@ div.logo-container {
 }
 
 .start {
+    font-weight: 500;
     font-size: 24px;
+    padding-left: 50px;
 }
 
 div.logo {
@@ -69,5 +157,9 @@ div.logo {
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+form > div {
+    padding-left: 50px;
 }
 
